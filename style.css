@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&family=Montserrat&family=Poppins&family=Prompt&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    background-color: #f2eae2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 450px;
+    width: 600px;
+    display: flex;
+}
+
+.container-info {
+    width: 50%;
+    background-color: #fff;
+    padding: 32px;
+}
+
+.img {
+    width: 50%;
+}
+
+.logo {
+    font-size: 12px;
+    font-family: 'Montserrat';
+}
+
+.h1-container {
+    padding-top: 20px;
+    width: 12rem;
+    font-family: 'Fraunces';
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+p {
+    font-family: 'Montserrat';
+    padding-top: 24px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 23px;
+}
+
+.price {
+    display: flex;
+    padding-top: 29px;
+    align-items: center;
+    gap: 19px;
+}
+
+.price .current {
+    color: #3d8168;
+    font-family: 'Fraunces';
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.price .previous {
+    color: #6c7289;
+    font-family: 'Montserrat';
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 23px;
+    text-decoration: line-through;
+}
+
+.btn {
+    margin-top: 30px;
+    width: 236px;
+    height: 48px;
+    border-radius: 8px;
+    background-color: #3d8168;
+    border-color: transparent;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Montserrat';
+    cursor: pointer;
+}
+
+.fa-cart-shopping {
+    margin-right: 10px;
+}
+
+.btn:active {
+    background-color: #1a4032;
+}
+
+@media (max-width: 375px) {
+    body {
+        position: relative;
+        overflow: auto;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        border-radius: 20px;
+        height: 95vh;
+        width: 90%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .img,
+    .container-info {
+        width: 100%;
+    }
+
+    .img {
+        position: absolute;
+        bottom: 15.5rem;
+        z-index: 0;
+    }
+
+    .container-info {
+        z-index: 1;
+        padding: 20px 24px 24px 24px;
+    }
+
+    .logo {
+        letter-spacing: 5px;
+    }
+
+    .h1-container {
+        width: 295px;
+        font-size: 32px;
+        line-height: 32px;
+        padding-top: 12px;
+    }
+
+    p {
+        padding-top: 16px;
+    }
+
+    .price {
+        padding-top: 24px;
+    }
+
+    .btn {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
